@@ -35,11 +35,12 @@
 
     $r = new Response();
 
-    $number = '1243233323';
-
-    $d = $r->addDial();
+    $d = $r->addDial(array("callerId" => "2XXXXXXX"));
     $d->addNumber('1XXXXXXX');
 
 
     echo($d->toXML());
+    
+    // Output:
+    // <Dial><Number>1XXXXXXX</Number></Dial>
 
