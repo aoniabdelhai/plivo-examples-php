@@ -31,18 +31,4 @@
     //  </Response>
     //
     //
-
-
-    $r = new Response();
-
-    $d = $r->addDial(array("callerId" => "2XXXXXXX"));
-    $d->addNumber('1XXXXXXX');
-
-
-    echo($d->toXML());
-    
-    // Output:
-    // <Dial callerId="2XXXXXXX">
-    // <Number>1XXXXXXX</Number>
-    // </Dial>
-
+?>
