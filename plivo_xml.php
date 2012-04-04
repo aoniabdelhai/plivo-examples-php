@@ -42,5 +42,7 @@
     echo($d->toXML());
     
     // Output:
-    // <Dial><Number>1XXXXXXX</Number></Dial>
+    // <Dial callerId="2XXXXXXX">
+    // <Number>1XXXXXXX</Number>
+    // </Dial>
 
