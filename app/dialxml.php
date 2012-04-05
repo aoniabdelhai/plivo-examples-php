@@ -14,6 +14,6 @@ $d->addNumber($dial_number);
 
 
 header('Content-type: text/xml');
-echo( $r->toXML(TRUE));
+echo( $r->toXML());
 
 ?>

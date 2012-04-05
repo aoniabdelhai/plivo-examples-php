@@ -18,6 +18,6 @@ $wait_attribute = array(
 $r->addWait($wait_attribute);
 
 header('Content-type: text/xml');
-echo( $r->toXML(TRUE));
+echo( $r->toXML());
 
 ?>

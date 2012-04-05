@@ -16,6 +16,6 @@ $r->addSpeak($body);
 $r->addRecord($record_attribute);
 
 header('Content-type: text/xml');
-echo( $r->toXML(TRUE));
+echo( $r->toXML());
 
 ?>
