@@ -13,21 +13,21 @@
 
     // Get Live conference
     $params = array(
-            'conference_id' => 'XXXXXXXXXXXXXXXXXXXX',
+            'conference_name' => 'XXXXXXXXXXXXXXXXXXXX',
         );
     $p->get_live_conference($params);
 
 
     // Hangup Conference
     $params = array(
-            'conference_id' => 'XXXXXXXXXXXXXXXXXXXX',
+            'conference_name' => 'XXXXXXXXXXXXXXXXXXXX',
         );
     $p->hangup_conference($params);
 
 
     // Hangup Member
     $params = array(
-            'conference_id' => 'XXXXXXXXXXXXXXXXXXXX',
+            'conference_name' => 'XXXXXXXXXXXXXXXXXXXX',
             'member_id' => 'MMMMMMMMMMMMM',
         );
     $p->hangup_member($params);
@@ -35,14 +35,14 @@
 
     // Record Conference
     $params = array(
-            'conference_id' => 'XXXXXXXXXXXXXXXXXXXX',
+            'conference_name' => 'XXXXXXXXXXXXXXXXXXXX',
         );
     $p->record_conference($params);
 
 
     // Stop Recording Conference
     $params = array(
-            'conference_id' => 'XXXXXXXXXXXXXXXXXXXX',
+            'conference_name' => 'XXXXXXXXXXXXXXXXXXXX',
         );
     $p->stop_record_conference($params);
 
