@@ -1,5 +1,5 @@
 <?php
-    require 'Net/plivo.php';
+    require 'plivo.php';
 
     if($_SERVER['REQUEST_METHOD'] == 'GET') {
        $dst = $_GET['To'];
