@@ -1,24 +1,12 @@
 <?php
     require 'plivo.php';
 
-    if($_SERVER['REQUEST_METHOD'] == 'GET') {
-       $dst = $_GET['To'];
-       $src = $_GET['CLID'];
-       if(! $src) {
-           $src = $_GET['From'];
-       }
-       $cname = $_GET['CallerName'];
-    } else if($_SERVER['REQUEST_METHOD'] == 'POST') {
-       $dst = $_POST['To'];
-       $src = $_POST['CLID'];
-       if(! $src) {
-           $src = $_POST['src'];
-       }
-       $cname = $_POST['CallerName'];
-    } else { 
-       echo("Method not allowed!");
-       die();
+    $dst = $_REQUEST['To'];
+    $src = $_REQUEST['CLID'];
+    if(! $src) {
+        $src = $_REQUEST['From'];
     }
+    $cname = $_REQUEST['CallerName'];
 
     $response = new Response();
     if($dst) {
@@ -29,7 +17,11 @@
             $dial_params['callerName'] = $cname;
 
         $dial = $response->addDial($dial_params);
+        if(substr($dst, 0,4) == "sip:") {
+            $dial->addUser($dst);
+        } else {
         $dial->addNumber($dst);
+        }
     } else {
         $response->addHangup();
     }
