@@ -2,7 +2,7 @@
     require_once 'plivo.php';
 
     $convmap = array(0x80, 0xffff, 0, 0xffff);
-    $body = mb_encode_numericentity("Olá a todos! Esta é uma chamada de teste de plivo. O português é uma língua muito doce.", $convmap, 'UTF-8'); 
+    $body = mb_encode_numericentity("A rainha do aché comeu 1 maçã, 2 mamões e outras frutas às 15hs do dia 23/5/2012. Parabéns e abraços do vovô e da vovó.", $convmap, 'UTF-8'); 
     $url = 'http://examples.com/playTrumpet.mp3';
     $attributes = array (
         'loop' => 2,
@@ -23,14 +23,5 @@
     $r->addWait($wait_attribute);
 
     echo($r->toXML());
-
-    //  Output:
-    //  <Response>
-    //  <Speak loop="2">Calling from Plivo</Speak>
-    //  <Play loop="2">http://examples.com/playTrumpet.mp3</Play>
-    //  <Wait length="3" />
-    //  </Response>
-    //
-    //
 ?>
 
