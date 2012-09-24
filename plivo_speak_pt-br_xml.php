@@ -7,11 +7,15 @@
     $attributes = array (
         'loop' => 2,
     );
+    $speakattributes = array (
+        'loop' => 2,
+        'language' => 'pt-BR',
+    );
 
     $r = new Response();
 
     // Add speak element
-    $r->addSpeak($body, $attributes);
+    $r->addSpeak($body, $speakattributes);
 
     // Add play element
     $r->addPlay($url, $attributes);
@@ -23,5 +27,6 @@
     $r->addWait($wait_attribute);
 
     echo($r->toXML());
+
 ?>
 
