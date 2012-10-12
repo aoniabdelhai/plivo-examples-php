@@ -16,6 +16,7 @@
             'from' => $custom_id,
             'ring_url' => 'http://server.name/ring_url.php',
             'answer_url' => 'http://server.name/plivo_call_second_user.php?CLID='.$first_user.'To='.$second_user,
+	    'answer_method' => 'GET',
             'hangup_url' => 'http://server.name/hangup_url.php',
         );
 
