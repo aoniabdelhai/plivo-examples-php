@@ -12,6 +12,6 @@ $params = array(
         'answer_url' => 'http://example.com/speakxml.php',
     );
 
-$response = $p->make_call($params);
+$response = $r->make_call($params);
 
 ?>
