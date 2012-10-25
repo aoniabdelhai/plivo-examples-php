@@ -72,9 +72,12 @@
     $response  = $p->stop_play($params);
 
 
-    // Get Subaccount CDR
+    // Get CDRs
+    $response  = $p->get_cdrs();
+
+    // Get CDR
     $params = array(
         'call_uuid' => 'XXXXXXXXXXXXXXXXXXXXXXXXX',
     );
-    $response  = $p->get_subaccount_cdrs($params);
+    $response  = $p->get_cdr($params);
 ?>
