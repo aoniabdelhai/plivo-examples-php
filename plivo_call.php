@@ -77,7 +77,7 @@
 
     // Get CDR
     $params = array(
-        'call_uuid' => 'XXXXXXXXXXXXXXXXXXXXXXXXX',
+        'record_id' => 'XXXXXXXXXXXXXXXXXXXXXXXXX',
     );
     $response  = $p->get_cdr($params);
 ?>
