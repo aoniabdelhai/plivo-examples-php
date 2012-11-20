@@ -11,9 +11,8 @@
     );
 
     $r = new Response();
-    $g = addGetDigits($getdigitattributes);
+    $g = $r->addGetDigits($getdigitattributes);
     $g->addSpeak($body,$attributes);
-    $r->add($g);
     $r->addSpeak("Input not recieved",array('language' => 'en-US', 'voice' => 'WOMAN'));
     echo($r->toXML());
 
