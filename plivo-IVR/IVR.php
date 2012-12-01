@@ -8,7 +8,7 @@
     );
     $getdigitattributes = array (
 	'action'=> 'http://someserver.com/gather',
-    );
+    ); // This is the url where 'Digits' parameter would be sent after user's digit press event
 
     $r = new Response();
     $g = $r->addGetDigits($getdigitattributes);
