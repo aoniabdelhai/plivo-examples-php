@@ -1,7 +1,7 @@
 <?php
     require 'plivo.php';
     	
-    $dst = $_REQUEST['To'];
+    $dst = $_REQUEST['TO'];
     $src = $_REQUEST['CLID'];
     if(! $src) {
         $src = $_REQUEST['From'];
