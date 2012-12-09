@@ -15,7 +15,7 @@
             'to' => $first_user,
             'from' => $custom_id,
             'ring_url' => 'http://' . $_SERVER["SERVER_NAME"] . '/ring_url.php',
-            'answer_url' => 'http://' . $_SERVER["SERVER_NAME"] . '/plivo_call_second_user.php?CLID=' . $first_user . '&To=' . $second_user, 
+            'answer_url' => 'http://' . $_SERVER["SERVER_NAME"] . '/plivo_call_second_user.php?CLID=' . $first_user . '&TO=' . $second_user, 
             'hangup_url' => 'http://' . $_SERVER["SERVER_NAME"] . '/hangup_url.php',
             'answer_method' => 'GET',
             'hangup_method' => 'GET',
