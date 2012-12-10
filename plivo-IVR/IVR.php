@@ -7,7 +7,7 @@
         'loop' => 2,
     );
     $getdigitattributes = array (
-	'action'=> 'http://someserver.com/gather',
+	'action'=> 'http://' . $_SERVER["SERVER_NAME"] . '/gather',
     ); // This is the url where 'Digits' parameter would be sent after user's digit press event
 
     $r = new Response();
