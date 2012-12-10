@@ -3,7 +3,7 @@
            
       $body = 'Hi, Calling from Plivo';
       $body_speak = 'You just entered a wrong input! Have a good day!'
-      $url = 'http://examples.com/playTrumpet.mp3';
+      $url = 'http://' . $_SERVER["SERVER_NAME"] . '/playTrumpet.mp3';
       $attributes = array (
         'loop' => 2,
       );
