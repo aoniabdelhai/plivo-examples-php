@@ -35,7 +35,7 @@
             'url' => 'http://example.com/transfer_call',
             'method' => 'POST',
         );
-    $respomse = $p->transfer_call($params);
+    $response = $p->transfer_call($params);
 
 
     // Record Call
